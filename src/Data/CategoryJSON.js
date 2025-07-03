@@ -16,10 +16,7 @@ export const CategoryJSON = Array.from({ length: 10 }, (_, i) => ({
 
   ],
   description: 'Handcrafted of reeded American white oak with richly veined Emperador marble top...',
-  dimensions: '<p>72&quot;L x 42&quot;W x 30&quot;H</p>',
   materials: 'American white oak, Emperador marble',
   colors: ['Whitewashed Oak', 'Greige Oak'],
-  sizes: ["<p>72&quot;L</p>",
-    "<p>82&quot;L</p>",
-    "<p>96&quot;L</p>"]
+ 
 }));

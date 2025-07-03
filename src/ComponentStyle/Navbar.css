@@ -1,0 +1,108 @@
+.rolls-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: transparent;
+  transition: background-color 0.4s ease;
+  box-sizing: border-box;
+}
+
+.rolls-navbar.scrolled {
+  background-color: #00000056;
+}
+
+.rolls-navbar.not-home {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.navbar-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.346);
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+}
+
+.rolls-navbar.scrolled .navbar-content {
+  border-bottom: none;
+}
+
+.logo-img {
+  max-width: 70px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.asidebarWrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  cursor: pointer;
+}
+
+.asidebarOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.229);
+  backdrop-filter: blur(90px) !important;
+  -webkit-backdrop-filter: blur(40px);
+  color: white;
+  padding: 20px;
+  z-index: 9999;
+  width: 32%;    
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+@media (max-width: 525px) {
+  .logo-img {
+    max-width: 60px;
+  }
+
+  .fs-15 {
+    text-align: start;
+    font-size: 10px;
+  }
+
+  .asidebarOpen {
+    width: 100%; 
+  }
+}
+
+@media (min-width: 526px) and (max-width: 768px) {
+  .asidebarOpen {
+    width: 40%;
+  }
+}
+
+ 

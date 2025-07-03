@@ -1,0 +1,21 @@
+.ProductWarper{
+    height: 400px;
+    width: 100%;
+}
+.ProductWarper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+ 
+.BorderLeftCustom{
+    border-left: 1px solid rgba(255, 255, 255, 0.243);
+    padding-left: 13px;
+}
+@media (min-width: 0px) and (max-width: 525px) {
+  .ProductWarper{
+    height: 300px;
+    width: 100%;
+}
+}

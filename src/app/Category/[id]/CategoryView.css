@@ -1,0 +1,28 @@
+.addTocart-btn{ 
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+
+ 
+.CategoryView{
+    height: 100%;
+}
+.CategoryView img{
+    height: 100%;
+    object-fit: contain;
+
+}
+.imges-bottom-cetegory{
+    height: 150px;
+    width: 290px;
+}
+.imges-bottom-cetegory img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+select:focus{
+    outline: none;
+}

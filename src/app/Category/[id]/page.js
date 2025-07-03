@@ -137,10 +137,10 @@ export default function Page({params, product}) {
                             <div className="col-lg-3 col-md-3 col-sm-12 col-12 mb-2">
                                 <select className='bg-transparent w-100 py-2' id="cars">
                                     <option value=""></option>
-                                    <option value="saab">72"L</option>
-                                    <option value="opel">82"L</option>
-                                    <option value="audi">96"L</option>
-                                    <option value="audi">108"L</option>
+                                    <option value="saab">72&quot;L</option>
+                                    <option value="opel">82&quot;L</option>
+                                    <option value="audi">96&quot;L</option>
+                                    <option value="audi">108&quot;L</option>
                                 </select>
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-12 col-12 mb-2">
@@ -148,8 +148,8 @@ export default function Page({params, product}) {
                                     <option value=""></option>
                                     <option value="saab">whitewashed oak white emperador marble</option>
                                     <option value="opel">Greige Oak/grey emperador marble</option>
-                                    <option value="audi">96"L</option>
-                                    <option value="audi">108"L</option>
+                                    <option value="audi">92&quot;L</option>
+                                    <option value="audi">108&quot;L</option>
                                 </select>
                             </div>
                             <div className="col-lg-3 col-md-3 col-sm-12 col-12 mb-2 ">
@@ -227,8 +227,8 @@ export default function Page({params, product}) {
                                     <option value=""></option>
                                     <option value="saab">whitewashed oak white emperador marble</option>
                                     <option value="opel">Greige Oak/grey emperador marble</option>
-                                    <option value="audi">96"L</option>
-                                    <option value="audi">108"L</option>
+                                    <option value="audi">96&quot;L</option>
+                                    <option value="audi">108&quot;L</option>
                                 </select>
                             </div>
                             <div className="col-lg-4 col-md-4 col-sm-12 col-12 ">

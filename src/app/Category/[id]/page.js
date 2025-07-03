@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import { CategoryJSON } from '@/Data/CategoryJSON';
 import { AddToCartWrapper } from '@/Context/Addtocart';
 import { AddtoCartItem } from '@/Context/DataAddtoCart';
+import Image from 'next/image';
 
 
 
@@ -44,10 +45,12 @@ export default function Page({params, product}) {
                         <div className="row m-0">
                             <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className="CategoryView">
-                                    <img
+                                    <Image
                                         className="img-fluid "
                                         src={selectedImage ? selectedImage : DataProduct.categoryImg}
                                         alt="Product"
+                                        width={900}
+                                        height={500}
                                     />
                                 </div>
                             </div>
@@ -74,9 +77,11 @@ export default function Page({params, product}) {
                                         {
                                             DataProduct.images.map((img, i) => (
                                                 <div className='categoryView-imges-warp' key={i} onClick={() => handleImageClick(img)}>
-                                                    <img
+                                                    <Image
                                                         src={img}
                                                         className=" cursor-pointer img-fluid"
+                                                        width={350}
+                                                        height={350}
                                                     />
                                                 </div>
                                             ))
@@ -120,7 +125,7 @@ export default function Page({params, product}) {
                 <div className="row m-0 align-items-end">
                     <div className="col-lg-3 col-md-3 col-sm-6 col-12 mb-2">
                         <div>
-                            <img className='img-fluid' src={DataProduct.categoryImg} alt="" />
+                            <Image className='img-fluid' width={350} height={350} src={DataProduct.categoryImg} alt="Product" />
                         </div>
                     </div>
                     <div className="col-lg-9 col-md-9 col-sm-12 col-12">
@@ -206,7 +211,7 @@ export default function Page({params, product}) {
                 <div className="row m-0 align-items-end">
                     <div className="col-lg-3 col-md-3 col-sm-6 col-12 mb-2">
                         <div className='imges-bottom-cetegory'>
-                            <img className='img-fluid' src={DataProduct.images[1]} alt="" />
+                            <Image className='img-fluid' width={500} height={500} src={DataProduct.images[1]} alt="Product" />
                         </div>
                     </div>
 

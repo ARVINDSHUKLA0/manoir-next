@@ -3,6 +3,7 @@ import '../Category/Category.css'
 import { CategoryJSON } from '@/Data/CategoryJSON';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -15,11 +16,12 @@ const Page = () => {
       <section className="mx-lg-0 pt-5 mx-2">
         <div className="container-lg py-lg-4 my-lg-5 my-2">
           <div className="d-flex justify-content-end align-items-center gap-2">
-            <img
+            <Image
               onClick={() => setLayout('grid')}
               className="img-fluid cursor-pointer"
               src="/assets/img/catgorycol.png"
               width={30}
+              height={30}
               alt="3-column"
               title="3 Column Grid"
             />
@@ -47,7 +49,7 @@ const Page = () => {
                 <div key={index} className="col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
                   <div className="p-3">
                     <Link href={`/Category/${item.id}`}>
-                      <img className="img-fluid mb-2" src={item.categoryImg} alt="" />
+                      <Image className="img-fluid mb-2" src={item.categoryImg} width={500} height={300} alt="Product" />
                     </Link>
                     <p className="text-uppercase fs-2 m-0">{item.CategoryName}</p>
                     <p className="text-uppercase fs-12 m-0">{item.subTitle}</p>
@@ -71,10 +73,12 @@ const Page = () => {
                   <div className="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center">
                     <div className="w-100">
                       <Link href={`/Category/${item.id}`}>
-                        <img
+                        <Image
                           className="img-fluid custom-height-bootom-img"
                           src={item.categoryImg}
-                          alt=""
+                          alt="Product"
+                          width={300}
+                          height={300}
                         />
                       </Link>
                       <p className="text-uppercase py-2 fs-2">{item.CategoryName}</p>
@@ -96,10 +100,12 @@ const Page = () => {
                   </div>
                   <div className="col-lg-8 col-md-8 col-sm-8 col-12 mb-lg-4 d-sm-block d-none">
                     <Link href={`/Category/${item.id}`}>
-                      <img
+                      <Image
                         className="img-fluid w-100 h-100 object-fit-cover"
                         src={item.categoryImg}
-                        alt=""
+                        alt="Product"
+                        height={300}
+                        width={300}
                       />
                     </Link>
                   </div>

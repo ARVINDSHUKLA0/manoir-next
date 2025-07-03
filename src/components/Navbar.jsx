@@ -7,6 +7,7 @@ import { MenuContext } from '../Context/MenuProvider';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import CartSidebar from './CartSidebar';
+import Image from 'next/image';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -123,7 +124,7 @@ function Navbar() {
               </div>
               <div className="col-6 text-center">
                 <Link href="/">
-                  <img className="img-fluid logo-img" src={currentLogo} alt="Logo" />
+                  <Image className="img-fluid logo-img" width={100} height={100} src={currentLogo} alt="Logo" />
                 </Link>
               </div>
               <div className="col-3 text-end">

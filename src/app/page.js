@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from "next/link";
 import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 export default function Home() {
   const ProductArr = [
     { id: 1, ProdcutImg: "/assets/img/Product1.webp", name: "kintsu" },
@@ -45,7 +46,7 @@ export default function Home() {
             ProductArr.map((item, index) => (
               <div className='px-2 position-relative' key={index}>
                 <div className={`${styles.ProductWarper}`}>
-                  <img src={item.ProdcutImg} alt="" />
+                  <Image src={item.ProdcutImg} width={300} height={300} alt="Product image" />
                 </div>
                 <div className={`${styles.BorderLeftCustom}`}>
                   <h5 className='text-uppercase py-2'>seasonal sakura</h5>
